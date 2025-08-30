@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Suhagiya - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      line-height: 1.5;
+      color: #000;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 1.6cm 1.7cm 1.4cm 1.7cm;
+      background: white;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .header h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      margin-bottom: 8pt;
+      color: #000;
+    }
+    
+    .contact-info {
+      font-size: 11pt;
+      line-height: 1.2;
+    }
+    
+    .contact-info a {
+      color: #000;
+      text-decoration: none;
+    }
+    
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    
+    .separator {
+      margin: 0 5pt;
+    }
+    
+    section {
+      margin-bottom: 1.2rem;
+    }
+    
+    h2 {
+      font-size: 12pt;
+      font-weight: 700;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2pt;
+      margin-bottom: 0.5rem;
+    }
+    
+    .section-content {
+      margin-left: 0;
+    }
+    
+    .highlights {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .highlights li {
+      position: relative;
+      padding-left: 15pt;
+      margin-bottom: 4pt;
+    }
+    
+    .highlights li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+    
+    .skills-grid {
+      display: grid;
+      gap: 4pt;
+    }
+    
+    .skills-row {
+      margin-bottom: 4pt;
+    }
+    
+    .two-col {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.25rem;
+    }
+    
+    .two-col .left {
+      flex: 1;
+    }
+    
+    .two-col .right {
+      font-weight: normal;
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+    
+    .project-stack {
+      font-style: italic;
+      font-size: 10pt;
+      margin: 4pt 0 8pt 0;
+      color: #333;
+    }
+    
+    strong {
+      font-weight: 600;
+    }
+    
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    @media print {
+      body {
+        padding: 0.5in;
+        font-size: 10pt;
+      }
+      
+      .header h1 {
+        font-size: 18pt;
+      }
+      
+      h2 {
+        font-size: 11pt;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .contact-info {
+        line-height: 1.4;
+      }
+      
+      .separator {
+        display: block;
+        margin: 0;
+      }
+      
+      .two-col {
+        flex-direction: column;
+      }
+      
+      .two-col .right {
+        margin-left: 0;
+        margin-top: 0.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Meet Suhagiya</h1>
+    <div class="contact-info">
+      <a href="mailto:meetsuhagiya113@gmail.com">meetsuhagiya113@gmail.com</a>
+      <span class="separator">|</span>
+      <a href="tel:+91-70695-50808">+91 70695 50808</a>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/meet-suhagiya" target="_blank">LinkedIn</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/developer-meett" target="_blank">GitHub</a>
+      <span class="separator">|</span>
+      <a href="https://leetcode.com/u/meet_suhagiya/" target="_blank">LeetCode</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <ul class="highlights">
+      <li>CS undergrad with strong Data Structures & Algorithms; solved <strong>250+</strong> problems across platforms.</li>
+      <li>iOS development with <strong>SwiftUI</strong> and <strong>Firebase</strong>; building React‑based web applications with serverless backends.</li>
+      <li>Developed serverless architectures using <strong>Firebase Cloud Functions</strong> and <strong>Firestore</strong> for dynamic data processing.</li>
+      <li>Interested in iOS development, system design, and competitive programming; comfortable with Swift, JavaScript, and Python.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skills-row"><strong>Languages:</strong> C++, Python, JavaScript, Swift, SQL, HTML/CSS</div>
+      <div class="skills-row"><strong>Frameworks & Databases:</strong> SwiftUI, React, Firebase (Cloud Functions, Firestore)</div>
+      <div class="skills-row"><strong>Tools/Platforms/Cloud:</strong> Git, GitHub, Linux, VS Code, Xcode, Firebase, CLI</div>
+      <div class="skills-row"><strong>Core:</strong> Data Structures, Algorithms, Object‑Oriented Programming, iOS Development</div>
+      <div class="skills-row"><strong>Technologies:</strong> iOS Development (SwiftUI), System Design Basics, Competitive Programming</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="two-col">
+      <div class="left">
+        <strong>Know‑Map: Personalized Learning Roadmap Generator (In Progress)</strong>
+      </div>
+      <div class="right">
+        <a href="https://github.com/developer-meett/Know-map" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="project-stack">
+      <em>Stack: React, Firebase (Cloud Functions, Firestore), JavaScript | Deploy: Firebase Hosting planned</em>
+    </div>
+    <ul class="highlights">
+      <li>Backend: Serverless architecture using Firebase Cloud Functions to analyze quiz results from subtopic‑tagged question bank.</li>
+      <li>Frontend: Dynamic React interface for quiz administration and knowledge gap visualization with actionable insights.</li>
+      <li>Data Processing: Automated generation of personalized learning plans based on quiz performance analytics.</li>
+      <li>Future Scope: Java module validation with pilot users and AI‑powered question generation integration.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="two-col">
+      <div class="left">
+        <strong>Parul Institute of Technology, Vadodara</strong> — B.Tech in Computer Science and Engineering
+      </div>
+      <div class="right">
+        2023 -- Present
+      </div>
+    </div>
+    <ul class="highlights">
+      <li>CGPA: <strong>8.1/10.0</strong></li>
+      <li>Relevant Coursework: Data Structures, Algorithms, Operating Systems, Computer Networks</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Competitive Programming</h2>
+    <ul class="highlights">
+      <li>Cross‑platform: <strong>250+</strong> problems solved across LeetCode, CodeChef, and CodeForces.</li>
+      <li><a href="https://leetcode.com/u/meet_suhagiya/" target="_blank">LeetCode</a>: Active problem solver with consistent progress.</li>
+      <li><a href="https://www.codechef.com/users/meetsuhagiya" target="_blank">CodeChef</a>: Regular contest participation and problem solving.</li>
+      <li><a href="https://codeforces.com/profile/meet_suhagiya" target="_blank">CodeForces</a>: Active participation in competitive programming contests.</li>
+      <li><a href="https://smartinterviews.in/certificate/faecff61" target="_blank">Smart Coder Certificate</a>: Achieved Global Rank <strong>7803/46268</strong> in a rigorous 40‑day DSA course, solving <strong>180+</strong> problems with <strong>350+</strong> submissions.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Achievements & Leadership</h2>
+    <ul class="highlights">
+      <li><strong>AWS Certified Cloud Practitioner</strong> • Enrolled in AWS Academy Cloud Foundations</li>
+      <li><strong>Google Cloud Arcade</strong>: Completed program with hands‑on labs in Google Cloud Platform</li>
+      <li><strong>Core Member, iOS Community</strong>: Actively guide peers in Swift and SwiftUI app development</li>
+      <li><strong>Languages</strong>: English (Fluent), Hindi (Fluent), Gujarati (Native)</li>
+      <li><strong>Current Focus</strong>: System Design fundamentals (scalability, database design, architectural patterns)</li>
+    </ul>
+  </section>
+
+</body>
+</html>
